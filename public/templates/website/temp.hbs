@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>head}}
+</head>
+
+<body>
+    <div class="box">
+        <div class="wave one"></div>
+        <div class="wave two"></div>
+        <div class="wave three"></div>
+
+        <div id="weather_condition" class="{{skyConditions}}">
+        </div>
+        <div id="weather_info">
+            <h2 id="location">
+                <i class="fa fa-street-view" style="color:rgb(99, 11, 242);"></i>
+                {{cityVal}}, {{nationVal}}
+            </h2>
+            <p id="date">WED | OCT 23 | 10:24 AM</p>
+            <h1 id="temp">{{tempVal}}&deg; C</h1>
+            <h3 id="temp_min_max">
+                Min {{minVal}}&deg;C | Max {{maxVal}}&deg;C
+            </h3>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
